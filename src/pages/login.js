@@ -12,6 +12,7 @@ export default class Login extends Common {
         this.loginBtn = page.locator("button[title='Login']");
         this.forgotPasswordBtn = page.locator("a[href*='forgotten/password']");
         this.continueNewUserBtn = page.locator("button[title='Continue']");
+        this.errorMessageModal = page.locator("[class='alert alert-error alert-danger']"); 
     }
 
     /**
@@ -24,7 +25,7 @@ export default class Login extends Common {
 		await super.clickElement(this.loginBtn);
 	}
 
-	async goToResetPasswordPage(){
+	async goToForgotPasswordPage(){
 		await super.clickElement(this.forgotPasswordBtn);
 	}
 
