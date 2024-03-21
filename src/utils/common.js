@@ -28,4 +28,26 @@ export default class Common {
 	async clickElement(locator){
 		await locator.click();
 	}
+
+	/**
+	 * @param {page.locator} locator the element selector
+	 */
+	async hoverElement(locator){
+		await locator.hover();
+	}
+
+	/**
+	 * @param {page.locator} locator the element selector
+	 * @param {string} option name of the list option for the <select> element
+	 */
+	async selectOption(locator, option){
+		await locator.selectOption(option)
+	}
+
+	/**
+	 * @param {page.locator} locator the element selector
+	 */
+	async checkElement(locator){
+		await locator.check();
+	}
 }

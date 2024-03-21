@@ -31,4 +31,10 @@ test.describe("Login Tests", async() => {
 		await loginPage.goToForgotPasswordPage();
 		await expect(forgotPasswordPage.forgotPasswordTitle).toContainText("Forgot Your Password?");
 	});
+
+	test("Log out", async()=>{
+		await loginPage.login(username, password);
+		await navbar.logout();
+		await expect(navbar.logoutTitle).toContainText("Account Logout");
+	});
 });
