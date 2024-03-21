@@ -2,7 +2,7 @@ import {test, expect} from "@playwright/test";
 import Navbar from "../pages/navbar.js";
 import TshirtGallery from "../pages/tshirtGallery.js";
 
-test.describe.only("Navbar tests", async()=>{
+test.describe("Navbar tests", async()=>{
     let navbar;
     let tshirtGallery;
     
