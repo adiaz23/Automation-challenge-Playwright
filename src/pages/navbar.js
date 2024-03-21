@@ -11,6 +11,8 @@ export default class Navbar extends Common {
         this.welcomeMessage = page.locator("div[class*='menu_text']");
         this.logoutBtn = page.locator("#customer_menu_top [href*='logout']");
         this.logoutTitle = page.locator("h1");
+        this.apparelAccesoryBtn = page.locator("a[href='https://automationteststore.com/index.php?rt=product/category&path=68']");
+        this.tshirtBtn = page.locator("a[href*='70']");
     }
 
     async goToHomePage(){
@@ -29,5 +31,14 @@ export default class Navbar extends Common {
     async logout(){
         await this.openUserMenu();
         await super.clickElement(this.logoutBtn);
+    }
+
+    async openApparelAndAccessoryMenu(){
+        await super.hoverElement(this.apparelAccesoryBtn);
+    }
+
+    async goToTShirtGallery(){
+        await this.openApparelAndAccessoryMenu();
+        await super.clickElement(this.tshirtBtn);
     }
 }
