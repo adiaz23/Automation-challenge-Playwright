@@ -7,5 +7,15 @@ export default class Cart extends Common {
     constructor(page){
         super(page);
         this.subtotal = page.locator("#totals_table tr:nth-child(1) td:nth-child(2)");
+        this.removeBtn = page.locator("a[href*='remove']");
+        this.emptyCartMessage = page.locator("[class*='contentpanel']");
+    }
+
+    async removeProduct(){
+        await super.clickElement(this.removeBtn);
+    }
+
+    async getEmptyCartMessage(){
+        return await super.getElementText(this.emptyCartMessage);
     }
 }
