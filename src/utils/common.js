@@ -50,4 +50,19 @@ export default class Common {
 	async checkElement(locator){
 		await locator.check();
 	}
+
+	/**
+	 * @param {page.locator} locator the element selector
+	 */
+	async getElementText(locator){
+		return await locator.innerText();
+	}
+
+	/**
+	 * @param {page.locator} locator the element selector
+	 * @param {string} attribute the attribute's name to get the value from
+	 */
+	async getElementAttribute(locator, attribute){
+		return await locator.getAttribute(attribute);
+	}
 }
