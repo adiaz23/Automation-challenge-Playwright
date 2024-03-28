@@ -1,7 +1,7 @@
 import {test, expect} from "@playwright/test";
-import Navbar from "../pages/navbar.js";
-import Login from "../pages/login.js"
-import CreateAccount from "../pages/createAccount.js";
+import Navbar from "../../pages/navbar.js";
+import Login from "../../pages/login.js"
+import CreateAccount from "../../pages/createAccount.js";
 
 test.describe("Create Account Tests", async() =>{
     let createAccountPage;

@@ -1,7 +1,7 @@
 import {test,expect} from "@playwright/test";
-import Cart from "../pages/cart.js";
-import TshirtGallery from "../pages/tshirtGallery.js";
-import TshirtPDP from "../pages/tshirtPdp.js";
+import Cart from "../../pages/cart.js";
+import TshirtGallery from "../../pages/tshirtGallery.js";
+import TshirtPDP from "../../pages/tshirtPdp.js";
 
 test.describe("T-Shirt Gallery tests", async()=>{
     let cartPage;

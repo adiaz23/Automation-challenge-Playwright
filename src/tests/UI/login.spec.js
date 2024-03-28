@@ -1,7 +1,7 @@
 import {test, expect} from "@playwright/test";
-import Login from "../pages/login.js";
-import Navbar from "../pages/navbar.js";
-import ForgotPassword from "../pages/forgotPassword.js";
+import Login from "../../pages/login.js";
+import Navbar from "../../pages/navbar.js";
+import ForgotPassword from "../../pages/forgotPassword.js";
 
 test.describe("Login Tests", async() => {
 	let forgotPasswordPage;

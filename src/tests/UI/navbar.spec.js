@@ -1,6 +1,6 @@
 import {test, expect} from "@playwright/test";
-import Navbar from "../pages/navbar.js";
-import TshirtGallery from "../pages/tshirtGallery.js";
+import Navbar from "../../pages/navbar.js";
+import TshirtGallery from "../../pages/tshirtGallery.js";
 
 test.describe("Navbar tests", async()=>{
     let navbar;
