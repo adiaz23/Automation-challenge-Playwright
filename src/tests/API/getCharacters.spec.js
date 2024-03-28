@@ -24,7 +24,7 @@ test.describe("Fetch characters from Marvel API", async()=>{
         expect(response.status).toBe("You may not request more than 100 items.");
     });
 
-    test.only("Fetch zero character", async()=>{
+    test("Fetch zero character", async()=>{
         let request = await apiRequest.get(`/v1/public/characters?ts=${timeStamp}&apikey=${publicKey}&hash=${hash}&limit=0`);
         let response = await request.json();
         expect(response.code).toBe(409);
