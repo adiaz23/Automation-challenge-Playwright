@@ -23,7 +23,7 @@ export default class CreateAccount extends Common {
         this.noSuscribeOption =  page.locator("#AccountFrm_newsletter0");
         this.agreePrivacyPolicyChekbox = page.locator("#AccountFrm_agree");
         this.continueBtn = page.locator("button[title='Continue']");
-        this.accountCreatedTitle = page.locator("h1");
+        this.accountCreatedTitle = page.locator("h1 span").nth(0);
         this.errorMessageLoginNameField = page.locator("div[class*='form-group has-error'] span[class*='help-block']");
     }
 
