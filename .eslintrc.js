@@ -44,5 +44,8 @@ module.exports = {
 		"line-comment-position": [
 			"error"
 		]
-	}
+	},
+	"ignorePatterns": [
+		"/home/runner/work/Automation-challenge-Playwright/Automation-challenge-Playwright/allure-history/^[0-9]*$/app.js"
+	]
 };
