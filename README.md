@@ -33,9 +33,9 @@ This demo is divided in two parts:
 1. Make sure you have installed on your system:
 - [node](https://nodejs.org/en/)
 - [npm](https://www.npmjs.com/package/npm)
-- [Java](https://www.java.com/en/download/)
+- [Java](https://www.java.com/en/download/) and its directory is specified in the `JAVA_HOME` environment variable
 
-2. Before you start, remember to run the command to install the dependencies:
+3. Before you start, remember to run the command to install the dependencies:
 
 ```bash
 npm install
