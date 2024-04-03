@@ -3,13 +3,19 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test",
+    "test-ui": "npx playwright test --ui",
+    "generate-report": "npx allure serve allure-results"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.42.1",
-    "@types/node": "^20.11.28"
+    "@types/node": "^20.11.28",
+    "allure-commandline": "^2.27.0",
+    "allure-playwright": "^2.15.0"
   },
   "dependencies": {
     "chance": "^1.1.11",

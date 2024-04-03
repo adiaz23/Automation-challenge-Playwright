@@ -31,7 +31,7 @@ test.describe("Fetch characters of a specified comic from Marvel API", async()=>
     test("Fetch X-Man character of a specified comic without ComicID", async()=>{
         let response = await (await apiRequest.get(`/v1/public/comics//characters?&ts=${timeStamp}&apikey=${publicKey}&hash=${hash}`)).json();
         expect(response.code).toBe(404);
-        expect(response.status).toBe("We couldn't find that comic issue");
+        expect(response.status).toBe("We couldn't find that comic_issue");
     });
 
     test("Fetch X-Man character of a specified comic without a parameter", async()=>{
