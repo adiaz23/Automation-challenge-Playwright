@@ -37,6 +37,12 @@ module.exports = {
 		"semi": [
 			"error",
 			"always"
+		],
+		"no-var": [
+			"error"
+		],
+		"line-comment-position": [
+			"error"
 		]
 	}
 };
