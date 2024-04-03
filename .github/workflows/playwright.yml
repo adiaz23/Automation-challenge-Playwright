@@ -71,4 +71,5 @@ jobs:
           token: ${{ secrets.GH_TOKEN }}
           all-files: true
           eslint-args: '--ignore-path=.gitignore --quiet'
+          ignore-path: /allure-history
           extensions: 'js,jsx,ts,tsx'
