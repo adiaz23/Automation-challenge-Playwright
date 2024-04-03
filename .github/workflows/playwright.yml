@@ -70,6 +70,5 @@ jobs:
       with:
           token: ${{ secrets.GH_TOKEN }}
           all-files: true
-          eslint-args: '--ignore-path=.gitignore --quiet'
-          ignore-path: ../app.js
+          eslint-args: '--ignore-path=.gitignore,app.js --quiet'
           extensions: 'js,jsx,ts,tsx'
