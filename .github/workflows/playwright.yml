@@ -66,4 +66,4 @@ jobs:
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: allure-history
     - name: Run ESLint
-      run: eslint /src --ext .js,.jsx,.ts,.tsx
+      run: npx eslint src/** --ext .js,.jsx,.ts,.tsx
