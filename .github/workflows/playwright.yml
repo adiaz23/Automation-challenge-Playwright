@@ -69,5 +69,6 @@ jobs:
       uses: sibiraj-s/action-eslint@v3
       with:
           token: ${{ secrets.GH_TOKEN }}
+          all-files: true
           eslint-args: '--ignore-path=.gitignore --quiet'
           extensions: 'js,jsx,ts,tsx'
