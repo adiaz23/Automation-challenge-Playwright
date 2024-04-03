@@ -40,7 +40,7 @@ export default class Common {
 	 * @param {string} option name of the list option for the <select> element
 	 */
 	async selectOption(locator, option){
-		await locator.selectOption(option)
+		await locator.selectOption(option);
 	}
 
 	/**

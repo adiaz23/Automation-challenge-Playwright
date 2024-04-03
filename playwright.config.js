@@ -2,6 +2,7 @@
 // @ts-check
 const { defineConfig, devices } = require("@playwright/test");
 import { testPlanFilter } from "allure-playwright/dist/testplan";
+import * as os from "os";
 
 /**
  * Read environment variables from file.
@@ -18,8 +19,16 @@ module.exports = defineConfig({
 	forbidOnly: !!process.env.CI,
 	retries: process.env.CI ? 2 : 0,
 	workers: process.env.CI ? 1 : undefined,
-	/* Reporter to use. See https://playwright.dev/docs/test-reporters */
-	reporter: [["line"], ["allure-playwright"]],
+	reporter: [["line"], ["allure-playwright", {
+		detail: true,
+		suiteTitle: true,
+		environmentInfo: {
+			os_plataform: os.platform(),
+			os_release: os.release(),
+			os_veersion: os.version(),
+			node_version: process.version,
+		},
+	}]],
 	/* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
 	use: {
 		baseURL: process.env.URL,

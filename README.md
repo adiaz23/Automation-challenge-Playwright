@@ -47,7 +47,7 @@ npm install
 3. Complete the environment variable `URL` with the URL of the [website](https://automationteststore.com/)
 4. Complete the environment variable `API_URL` with the [Marvel API URL](https://gateway.marvel.com:443)
 5. Complete the environment variable `USERNAME`, `PASSWORD` with the information of a valid user.
-6. Complete the environment variable `PUBLICKEY` with the Public key generated on the [Marvel API Page](https://developer.marvel.com/documentation/getting_started#:~:text=Sign%20up%3A-,Get%20an%20API%20key,-Be%20a%20good)
+6. Complete the environment variable `PUBLIC_KEY` with the Public key generated on the [Marvel API Page](https://developer.marvel.com/documentation/getting_started#:~:text=Sign%20up%3A-,Get%20an%20API%20key,-Be%20a%20good)
 7. Complete the environment variable `TIMESPAMP` with a timetsamp generated with this [page](https://timestampgenerator.com/)
 8. Complete the environment variable `HASH` with a hash generated with this [page](https://www.md5hashgenerator.com/). To generate a valid hash, it's necessary to paste your previously generated timestamp, your private key and your public key together.
 
