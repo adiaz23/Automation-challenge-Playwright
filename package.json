@@ -15,7 +15,8 @@
     "@playwright/test": "^1.42.1",
     "@types/node": "^20.11.28",
     "allure-commandline": "^2.27.0",
-    "allure-playwright": "^2.15.0"
+    "allure-playwright": "^2.15.0",
+    "eslint": "^8.57.0"
   },
   "dependencies": {
     "chance": "^1.1.11",

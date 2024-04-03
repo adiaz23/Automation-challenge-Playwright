@@ -1,5 +1,4 @@
 export default class Common {
-
 	/**
    	* @param {import('@playwright/test').Page} page
    	*/

@@ -6,8 +6,10 @@ import ForgotPassword from "../../pages/forgotPassword.js";
 test.describe("Login Tests", async() => {
 	let forgotPasswordPage;
 	let loginPage;
-    let navbar;
+	let navbar;
+	// eslint-disable-next-line no-undef
 	let username = process.env.USERNAME;
+	// eslint-disable-next-line no-undef
 	let password = process.env.PASSWORD;
 
 	test.beforeEach(async ({ page }) => {
@@ -17,10 +19,10 @@ test.describe("Login Tests", async() => {
 		await navbar.goToLoginPage();
 	});
 
-    test("Login with valid credentials", async() => {
-        await loginPage.login(username, password);
-        await expect(navbar.welcomeMessage).toContainText("Welcome back Arianna")
-    });
+	test("Login with valid credentials", async() => {
+		await loginPage.login(username, password);
+		await expect(navbar.welcomeMessage).toContainText("Welcome back Arianna");
+	});
 
 	test("Login with invalid credentials", async() =>{
 		await loginPage.login("testInvalid2", "testInvalid32");
