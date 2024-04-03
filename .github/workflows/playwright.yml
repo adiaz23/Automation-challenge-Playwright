@@ -65,10 +65,5 @@ jobs:
         PERSONAL_TOKEN: ${{ secrets.GH_TOKEN }}
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: allure-history
-    - name: Run Eslint
-      uses: sibiraj-s/action-eslint@v3
-      with:
-          token: ${{ secrets.GH_TOKEN }}
-          all-files: true
-          eslint-args: '--ignore-path=.gitignore --quiet'
-          extensions: 'js,jsx,ts,tsx'
+    - name: Run ESLint
+      run: eslint /src --ext .js,.jsx,.ts,.tsx
