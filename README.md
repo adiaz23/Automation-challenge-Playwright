@@ -21,19 +21,19 @@ This demo is divided in two parts:
 
 ## Tools and technologies
 
-- Playwright
-- Javascript
-- Allure reports
-- Github Actions
+- [Playwright](https://playwright.dev/)
+- [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Allure reports](https://allurereport.org/docs/)
+- [Github Actions](https://docs.github.com/en/actions)
 
 ## Setting up
 
 ### Dependencies
 
-1. Make sure you have installed on your system:
+1. Make sure you have:
 - [node](https://nodejs.org/en/)
 - [npm](https://www.npmjs.com/package/npm)
-- [Java](https://www.java.com/en/download/) and its directory is specified in the `JAVA_HOME` environment variable
+- [Java](https://www.java.com/en/download/) and its directory specified in the `JAVA_HOME` environment variable
 
 3. Before you start, remember to run the command to install the dependencies:
 
@@ -49,7 +49,7 @@ npm install
 5. Complete the environment variable `USERNAME`, `PASSWORD` with the information of a valid user.
 6. Complete the environment variable `PUBLIC_KEY` with the Public key generated on the [Marvel API Page](https://developer.marvel.com/documentation/getting_started#:~:text=Sign%20up%3A-,Get%20an%20API%20key,-Be%20a%20good)
 7. Complete the environment variable `TIMESPAMP` with a timetsamp generated with this [page](https://timestampgenerator.com/)
-8. Complete the environment variable `HASH` with a hash generated with this [page](https://www.md5hashgenerator.com/). To generate a valid hash, it's necessary to paste your previously generated timestamp, your private key and your public key together.
+8. Complete the environment variable `HASH` with a hash generated with this [page](https://www.md5hashgenerator.com/). To generate a valid hash, it's necessary to paste your previously generated timestamp, your private key and your public key together [more info](https://developer.marvel.com/documentation/authorization).
 
 ### Running
 

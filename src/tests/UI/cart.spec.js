@@ -15,7 +15,7 @@ test.describe("Cart Tests", async()=>{
 		await tshirtGalleryPage.goToTshirtGallery();
 	});
 
-	test('Remove product from cart', async()=>{
+	test("Remove product from cart", async()=>{
 		await tshirtGalleryPage.goToFirstProductWithStock();    
 		await tshirtPdp.addProductToCart();
 		await cartPage.removeProduct();
